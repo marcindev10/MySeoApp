@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Gallery</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' ) }}">
-
+    <link href="{{ url_for('static', filename='style.css' ) }}" rel="stylesheet">
+<style>
+div {
+width: 300px;
+height: auto;
+text-align: center;
+padding: 15px;
+border: 3px solid white;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+</style>
 </head>
 <body>
  <h1>My Gallery</h1>
