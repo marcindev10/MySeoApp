@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,3 +29,31 @@ img {
      </div>
 </body>
 </html>
+-->
+{% extends "base.html" %}
+
+{% block content  %}
+<h1></h1>
+  <!--  <div class="box">
+         <img src="{{ url_for('static', filename='./img/laptop.jpg') }}" alt="laptop">
+         <img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office">
+    </div>
+    -->
+<div class="container-md">
+  <div class="row">
+    <div class="col with .gx-4 gutters"><img src="{{ url_for('static', filename='./img/laptop.jpg') }}" alt="laptop"></div>
+    <div class="col with .gx-4 gutters"><img src="{{ url_for('static', filename='./img/laptop.jpg') }}" alt="laptop"></div>
+    <div class="col with .gx-4 gutters"><img src="{{ url_for('static', filename='./img/laptop.jpg') }}" alt="laptop"></div>
+  </div>
+  <div class="row">
+    <div class="col"><img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office"></div>
+    <div class="col"><img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office"></div>
+    <div class="col"><img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office"></div>
+  </div>
+  <div class="row">
+    <div class="col"><img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office"></div>
+    <div class="col"><img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office"></div>
+    <div class="col"><img src="{{ url_for('static', filename='./img/office.jpg') }}" alt="office"></div>
+  </div>
+</div>
+{% endblock %}
