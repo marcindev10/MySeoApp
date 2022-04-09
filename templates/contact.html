@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 
 {% block content  %}
-<h1>Contact me</h1>
-        <a href="mailto:marsel@gmail.com">marsel@gmail.com</a>
+<h1 style="text-align:center;" > Contact us </h1>
+<p style="text-align:center;"> If you would like to start working with us please fill in the form bellow and let us know </p>
+        <!-- <a href="mailto:marsel@gmail.com">marsel@gmail.com</a> -->
 
+
+        <div class="mb-3" style="text-align:center;">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3" style="text-align:center;">
+          <label for="exampleFormControlTextarea1" class="form-label"> Explain the reason for contacting </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
 {% endblock %}
-
-
