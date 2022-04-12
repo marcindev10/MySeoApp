@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://go.microsoft.com/fwlink/?linkid=2134798
 # More GitHub Actions for Azure: https://go.microsoft.com/fwlink/?linkid=2135048
 
-name: Azure App Service - sele(Production), Build and deploy Python app
+name: Azure App Service - MySeoApp(Production), Build and deploy Python app
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
       with:
-        app-name: sele
+        app-name: MySeoApp
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8A4042851BB44399A9FF69A07062190B }}
 
